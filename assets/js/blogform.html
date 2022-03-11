@@ -1,0 +1,75 @@
+
+  <html>
+ <head>
+    ...
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+      <style>
+         .bg-primary, .bg-warning, .bg-danger, .bg-info{
+        margin-right: 2px;
+        height: 25px;
+        width: 24px;
+        float: left;
+        text-align: center;}
+       .fa-edit:before,  .fa-user:before, .fa-trash:before, .fa-eye:before{color: #fff;}
+       .btn{margin-right: 3px;}
+       
+      </style>
+    </head>
+    <body >
+        <h1>ADD POST</h1>
+<div class="container px-3 my-5">
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <div class="form-floating mb-3">
+            <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+            <label for="name">Name</label>
+            <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+        </div>
+      
+
+        <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Category</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          </div>
+          
+         
+        <div class="form-floating mb-3">
+            <input class="form-control" id="title" type="text" placeholder="Title" data-sb-validations="required" />
+            <label for="title">Title</label>
+            <div class="invalid-feedback" data-sb-feedback="title:required">Title is required.</div>
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+          </div>
+          
+        <div class="form-floating mb-3">
+            <textarea class="form-control" id="content" type="text" placeholder="Content" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <label for="content">Content</label>
+            <div class="invalid-feedback" data-sb-feedback="content:required">Content is required.</div>
+        </div>
+
+ <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>

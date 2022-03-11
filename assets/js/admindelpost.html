@@ -1,0 +1,84 @@
+<html>
+    <head>
+        ...
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+          <style>
+             .bg-primary, .bg-warning, .bg-danger, .bg-info{
+            margin-right: 2px;
+            height: 25px;
+            width: 24px;
+            float: left;
+            text-align: center;}
+           .fa-edit:before,  .fa-user:before, .fa-trash:before, .fa-eye:before{color: #fff;}
+           .btn{margin-right: 3px;}
+           
+          </style>
+        </head>
+<div class="dash-header">
+    <div class="dash-title">
+        <h1>POSTS</h1>
+    </div>
+    
+        
+    
+    
+
+
+<div>
+  <table class="table table-bordered table-striped">
+    <tr>
+        <th>#ID</th>
+        
+        <th>Title</th>
+        <th>Created At</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let blog of blogs">
+        <td>12578</td>
+        
+        <td>title 1</td>
+        <td> 11/1/2021 10:am</td>
+        <td class="action">
+            <a href="#" class="btn btn-info btn-sm">Edit post</a>
+            <a href="#" class="btn btn-danger btn-sm">Delete post</a>
+        </td>
+    </tr>
+<tr>
+    <td>76893</td>
+        
+    <td>title 2</td>
+    <td> 13/1/2021 7:am</td>
+    <td class="action">
+        <a href="#" class="btn btn-info btn-sm">Edit post</a>
+        <a href="#" class="btn btn-danger btn-sm">Delete post</a>
+    </td>
+</tr>
+        <td>12578</td>
+        
+        <td>title 3</td>
+        <td>9/02/2021 8:am</td>
+        <td class="action">
+            <a href="#" class="btn btn-info btn-sm">Edit post</a>
+            <a href="#" class="btn btn-danger btn-sm">Delete post</a>
+        </tr>
+        <td>12578</td>
+        
+        <td>title 4</td>
+        <td>13/2/2021 4:pm</td>
+        <td class="action">
+            <a href="#" class="btn btn-info btn-sm">Edit post</a>
+            <a href="#" class="btn btn-danger btn-sm">Delete post</a>
+        </tr>
+        <td>12578</td>
+        
+        <td>title 5</td>
+        <td>9/09/2021 7:pm</td>
+        <td class="action">
+            <a href="#" class="btn btn-info btn-sm">Edit post</a>
+            <a href="#" class="btn btn-danger btn-sm">Delete post</a>
+        </tr>
+        </td>
+    </tr>
+  </table>
+</html>

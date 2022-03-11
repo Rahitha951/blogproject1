@@ -1,0 +1,101 @@
+
+<html>
+<head>
+    ...
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+      <style>
+         .bg-primary, .bg-warning, .bg-danger, .bg-info{border: none;
+        margin-right: 3px;
+        height: 25px;
+        width: 24px;
+        float: left;
+        text-align: center;}
+       .fa-edit:before,  .fa-user:before, .fa-trash:before, .fa-eye:before{color: #fff;}
+       .btn{margin-right: 3px;}
+       
+      </style>
+    </head>
+<div class="container p-5">
+    <h1>Users</h1>
+    <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+       
+           
+              <tr *ngFor="let group of data">
+                <td>19087</td>
+                <td>ajohnson@mac.com</td>
+                <td>john</td>
+                <td><button class="bg-danger"> <i class="fas fa-trash" (click)="deleteuser(group.id)"></i> </button>
+                  <a class="bg-warning" routerLink="/user/{{group.id}}"> <i class="fas fa-eye"></i> </a></td>
+                <tr>
+           
+                  <td>36589</td>
+                  <td>janesmith@gmail.com</td>
+                  <td>jane</td>
+                  <td><button class="bg-danger"> <i class="fas fa-trash" (click)="deleteuser(group.id)"></i> </button>
+                    <a class="bg-warning" routerLink="/user/{{group.id}}"> <i class="fas fa-eye"></i> </a></td>
+               
+                </tr>
+           
+                <tr>
+           
+                    <td>98456</td>
+                    <td>nichoj@yahoo.com</td>
+                    <td>nicho</td>
+                    <td><button class="bg-danger"> <i class="fas fa-trash" (click)="deleteuser(group.id)"></i> </button>
+                      <a class="bg-warning" routerLink="/user/{{group.id}}"> <i class="fas fa-eye"></i> </a></td>
+                      
+                      <tr>
+           
+                        <td>34013</td>
+                        <td>robertferrer @gmail.com</td>
+                        <td>robert</td>
+                        <td><button class="bg-danger"> <i class="fas fa-trash" (click)="deleteuser(group.id)"></i> </button>
+                          <a class="bg-warning" routerLink="/user/{{group.id}}"> <i class="fas fa-eye"></i> </a></td>
+        
+                          <tr>
+           
+                            <td>08654</td>
+                            <td>sanjay99@gmail.com</td>
+                            <td>sanjay</td>
+                            <td><button class="bg-danger"> <i class="fas fa-trash" (click)="deleteuser(group.id)"></i> </button>
+                              <a class="bg-warning" routerLink="/user/{{group.id}}"> <i class="fas fa-eye"></i> </a></td>
+                              
+                              <tr>
+           
+                                <td>08654</td>
+                                <td>aneetakl@gmail.com</td>
+                                <td>aneeta</td>
+                                <td><button class="bg-danger"> <i class="fas fa-trash" (click)="deleteuser(group.id)"></i> </button>
+                                  <a class="bg-warning" routerLink="/user/{{group.id}}"> <i class="fas fa-eye"></i> </a></td>
+                              
+                                  <tr>
+           
+                                    <td>33428</td>
+                                    <td>ronita32@yahoo.com</td>
+                                    <td>ronita</td>
+                                    <td><button class="bg-danger"> <i class="fas fa-trash" (click)="deleteuser(group.id)"></i> </button>
+                                      <a class="bg-warning" routerLink="/user/{{group.id}}"> <i class="fas fa-eye"></i> </a></td>
+
+                        </tbody>
+      </table>
+     
+</div>
+
+
+         
+          
+        </tbody>
+      </table>
+     
+</div>
+</html>
